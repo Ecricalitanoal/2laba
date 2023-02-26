@@ -1,0 +1,11 @@
+void init(int** matrix, int size);
+void filling(int** matrix, int size, int* codes);
+void write(int** matrix, int size, int* codes);
+void swap(int &a, int &b);
+void swap(int*& a, int*& b);
+void swap(bool& a, bool& b);
+void sort_cs_phys(int** matrix, int size);
+void selection_amm(int** matrix, int size, int* codes, bool* &ver_mass, int* &points);
+void sort1(int** &matrix, int size, int* &codes, bool* &ver_mass, int* &points);
+void sort2(int** &matrix, int size, int*& codes, int*& points);
+void print_final(int** matrix, int size, int* codes, int* points, bool* ver);
