@@ -14,13 +14,16 @@ int main()
     int** results = new int* [n];
     int* points = new int[n];
     bool* verified_amm = new bool[n];
+    bool* swapped = new bool[n];
     init(results, n);
     filling(results, n, codes);
     write(results, n, codes);
-    sort_cs_phys(results, n);
+    sort_cs_phys(results, n, swapped);
     write(results, n, codes);
-    selection_amm(results, n, codes, verified_amm, points);
+    selection_amm(results, n, codes, verified_amm, points, swapped);
     sort1(results, n, codes, verified_amm, points);
     sort2(results, n, codes, points);
+    sort3(results, n, codes, points, verified_amm);
+    sort4(results, n, codes, points, verified_amm);
     print_final(results, n, codes, points, verified_amm);
 }
